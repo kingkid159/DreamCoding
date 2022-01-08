@@ -2,324 +2,169 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>siho practice</title>
+	<title>DreamCoding</title>
+	<link rel='stylesheet'href='./dream.css?ver=2'>
 	<meta name="description" content="Its siho's web enginering practice site">
 	<meta name="author" content="Lee Siho">
 	<link rel="icon" type="image/png" href="../img/favicon.png">
 	<script src="https://kit.fontawesome.com/d49fa1b12d.js" 
 			crossorigin="anonymous"
 	></script>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="dream.css?ver=3"/>
 	<script src="dream.js" defer></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-	<!-- Navbar -->
-	<nav id="navbar">
-		<div class="navbar__logo">
+	<!-- home -->
+	<section id='home'>
+	<!-- navbar -->
+	<nav id='navbar'>
+		<div class='navbar__logo'>
 			<i class="fab fa-diaspora"></i>
-			<a href="#">Siho</a>
+			<a href='#'>Siho</a>
 		</div>
 		<div>
-			<ul class="navbar__menu">
-				<li class="navbar__menu__item active">Home</li>
-				<li class="navbar__menu__item">About</li>
-				<li class="navbar__menu__item">Skills</li>
-				<li class="navbar__menu__item">My work</li>
-				<li class="navbar__menu__item">Testimonial</li>
-				<li class="navbar__menu__item">Contact</li>
+			<ul class='navbar__menu'>
+				<li class='navbar__menu__item active'>Home</li>
+				<li class='navbar__menu__item'>About</li>
+				<li class='navbar__menu__item'>Skills</li>
+				<li class='navbar__menu__item'>My work</li>
+				<li class='navbar__menu__item'>Testimonial</li>
+				<li class='navbar__menu__item'>Contact</li>
 			</ul>
 		</div>
 	</nav>
-	<!-- home -->
-	<section id="home">
-		<img src="../img/leesigho.jpg"class="home__avatar">
-		<h1 class="home__title">Hello,<br>I'm Lee Siho</h1>
-		<h2 class="home__description">이건 지금 시험용입니다. 클론코딩 연습용 웹 페이지 입니다.</h2>
+		<img class='home__photo' src='./img/leesiho.jpg'>
+		<h1 class='home__title'>Hello,<br>I'm Lee Siho</h1>
+		<h2 class='home__description'>이건 지금 시험용입니다. 클론코딩 연습용입니다.</h2>
 		<button class="home__contact">Contact me</button>
 	</section>
 	<!-- about -->
-	<section id="about" class="section section__container">
-		<h1>About me</h1>
-		<p>웹 개발 연습을 위한 클론 코딩 중입니다.</p>
-		<div class="about__majors">
-			<div class="major">
-				<div class="major__icon"><i class="fab fa-html5"></i></div>
-				<h2 class="major__title">HTML</h2>
-				<div class="major__discription">
-					html5, javascript, css
-					<br>else ...
-				</div>
-			</div>
-			<div class="major">
-				<div class="major__icon"><i class="fab fa-python"></i></div>
-				<h2 class="major__title">Python</h2>
-				<div class="major__discription">
-					Web API, Pandas, Request
-					<br>Beautiful Soup,...
-				</div>
-			</div>
-			<div class="major">
-				<div class="major__icon"><i class="fas fa-comments"></i></div>
-				<h2 class="major__title">Comunication</h2>
-				<div class="major__discription">
-					LgU+, startup-competition
-					<br>startup-camp,...
-				</div>
+	<section id='about'>
+		<h1 class='about__title'>About me</h1>
+		<h3 class="about__description">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+		 Ut pretium pretium tempor. Ut eget imperdiet neque. 
+		 In volutpat ante semper diam molestie, et aliquam erat laoreet. 
+		 Sed sit amet arcu aliquet, molesie justo at, auctor nunc. Phasellus ligula ipsum, volutpata eget semper id,
+		  viverra eget nibh. Suspendisse luctus mattis cur </h3>
+		<div class="major">
+			<div class="major__icon"><i class="fab fa-html5"></i></div>
+			<h2 class='major__title'>HTML</h2>
+			<div class='major__description'>
+				html5, javascript, css
+				<br>else ...
 			</div>
 		</div>
-		<div class="about__jobs">
-			<div class="job">
-				<div class="job__box">
-				<div>
-					<img class=job__img src="../img/LG_U+_logo.png">
-				</div>	
-				<div>
-					<img class=job__img src="../img/jakorea.png">
-				</div>	
-				</div>
-				<div class="job__parase">
-					<p class="job__name">LGU+</p>
-					<p class="job__content">영업, 재고관리, 대내외 민원처리</p>	
-					<p class="job__name">JA Korea</p>
-					<p class="job__content">Aim-High camp,Fedex startup-competition</p>
-				</div>
+		<div class="major">
+			<div class="major__icon"><i class="fab fa-python"></i></div>
+			<h2 class='major__title'>Python</h2>
+			<div class='major__description'>
+				Web API, Pandas, Request
+				<br>Beautiful Soup,...
 			</div>
 		</div>
-		
-		
+		<div class="major">
+			<div class="major__icon"><i class="fas fa-comments"></i></div>
+			<h2 class='major__title'>Comunication</h2>
+			<div class='major__description'>
+				lgU+, startup-cometition
+				<br>startup-camp,...
+			</div>
+		</div>
+		<div class="job__exp">
+			<img class='exp__img' src='./img/LG_U+_logo.png'alt='lgu+'>
+			<p class='exp__name'>LGU+</p>
+			<p class='exp__content'>영업, 재고관리, 대내외 민원처리</p>
+			<img class='exp__img' src='./img/jakorea.png'alt='jakorea'>
+			<p class='exp__name'>JA Korea</p>
+			<p class='exp__content'>Aim-High camp,Fedex startup-competition</p>
+		</div>
 	</section>
 	<!-- skills -->
-	<section id="skills" class="section ">
-		<div class='section__container'>
-			<h1>Skills</h1>
-			<h2>Skills & Attribute</h2>
-			<p>
-			Experience with all phases of the software life-cycle. Passion for learning new technologies.
-			Capable a working within a team environment and independently.
-			Ability to plan and time schedule. work under strict time pressure and adapt quickly when needed.
-			</p>
-			<div class="skillset">
-				<div class="skillset__left">
-					<h3 class="skillset__title">Skills</h3>
-					<div class="skill">
-						<div class="skill_description">
-							<span>HTML</span>
-							<span>95%</span>
-						</div>
-						<div class="skill__bar">
-							<div class="skill__value" style="width:95%"></div>
-						</div>
-						<div class="skill_description">
-							<span>Python</span>
-							<span>80%</span>
-						</div>
-						<div class="skill__bar">
-							<div class="skill__value" style="width:80%"></div>
-						</div>
-						<div class="skill_description">
-							<span>CSS</span>
-							<span>90%</span>
-						</div>
-						<div class="skill__bar">
-							<div class="skill__value" style="width:90%"></div>
-						</div>
-						<div class="skill_description">
-							<span>Communication</span>
-							<span>99%</span>
-						</div>
-						<div class="skill__bar">
-							<div class="skill__value" style="width:99%"></div>
-						</div>
-						<div class="skill_description">
-							<span>Javascripte</span>
-							<span>60%</span>
-						</div>
-						<div class="skill__bar">
-							<div class="skill__value" style="width:60%"></div>
-						</div>
-					</div>
-				</div>
-				<div class="skillset_right">
-					<div class="tools">
-						<div>
-							<h3 class="skillset__title">Tools</h3>
-							<ul class="tools__list">
-								<li><span>Pycham</span></li>
-								<li><span>Eclipse</span></li>
-								<li><span>Note++</span></li>
-								<li><span>Powerpoint</span></li>
-								<li><span>Excell</span></li>
-							</ul>
-						</div>
-					</div>
-					<div>
-						<div>
-							<h3 class="skillset__title">ETC</h3>
-							<ul>
-								<li><span>Math</span></li>
-								<li><span>Accounting</span></li>
-								<li><span>Art</span></li>
-							</ul>
-						</div>
-					</div>
-				</div>
+	<section id='skills'>
+		<h1 class='skills__title'>Skills</h1>
+		<h2 class='skills__subtitle'>Skills & Attributes</h2>
+		<h4 class='skills__desc'>
+		Experience with all phases of the software life-cycle.
+		Passion for learning new technologies. Capable of
+		Working within a team environment and independently. Ability to plan
+		and time schedule, work under strict time pressure and adapt quickly when needed.
+		</h4>
+		<div class='skills__contain'>
+			<div class='skills__contain__left'>
+				<div class='contain__title'>Skills</div>
+				<div class='left__component'>HTML</div>
+				<div class='left__component'>CSS</div>
+				<div class='left__component'>JAVASCRIPT</div>
+				<div class='left__component'>JAVA</div>
+				<div class='left__component'>DATABASE</div>
+				<div class='left__component'>PYTHON</div>
+			</div>
+			<div class='skills__contain__right_top'>
+				<div class='contain__title'>Tools</div>
+				<p class='tools__description'>
+					Android development tools
+					IOS development tools
+					Sublime Text with Plug-ings
+					Visual Studio
+					Team Foundation
+					Adobe Programs
+					Sketch app
+				</p>
+			</div>
+			<div class='skills__contain__right_bot'>
+				<div class='contain__tilte'>Etc</div>
+				<p class='Etc__description'>git</p>
 			</div>
 		</div>
 	</section>
-	<!--  work -->
-	<section id="work" class="section section__container">
-		<div class='section__container'>
-			<h1>My work</h1>
-			<h3>Projects</h3>
-			<div class="work__categories">
-				<button class="category__btn active">All<span class="category__count">8</span></button>
-				<button class="category__btn">Front-end<span class="category__count">3</span></button>
-				<button class="category__btn">Back-end<span class="category__count">3</span></button>
-				<button class="category__btn">Mobile<span class="category__count">2</span></button>
-			</div>
-			<div class="work__project">
-				<a
-				href="https://file2.bobaedream.co.kr/pds/CyberCar/4/740304/thum5_740304.jpg"
-				class="project"
-				target="blank">
-					<img 
-					src="../img/BMW 320d ED 에디션.jpg"
-					alt="bmw 320d ed 에디션"
-					class="project__img">
-					<div class="project__discription">
-						<h3>BMW</h3>
-						<span> 320d ed 에디션</span>
-					</div>
-				</a>
-				<a
-				href='https://file2.bobaedream.co.kr/pds/CyberCar/3/743223/thum5_743223.jpg'
-				class="project"
-				target="blank">
-					<img
-					src='../img/재규어 XJ8 3.5.jpg'
-					class="project__img">
-					<div class="project__discription">
-						<h3>재규어</h3>
-						<span>XJ8 3.5</span>
-					</div>
-				</a>
-				<a
-				href="https://file2.bobaedream.co.kr/pds/CyberCar/0/748100/thum5_748100.jpg"
-				class="project"
-				target="blank">
-					<img
-					src="../img/폭스바겐 티구안 2.0 TDI 프리미엄.jpg"
-					class="project__img">
-					<div class="project__discription">
-						<h3>폭스바겐</h3>
-						<span> 티구안 2.0 TDI 프리미엄</span>
-					</div>
-				</a>
-				<a
-				href='https://file2.bobaedream.co.kr/pds/CyberCar/8/744358/thum5_744358.jpg'
-				class="project"
-				target="blank">
-					<img src='../img/랜드로버 뉴 레인지로버 4.4 SDV8 보그 SE.jpg'
-					class="project__img">
-					<div class="project__discription">
-						<h3>랜드로버 뉴 레인지로버</h3>
-						<span> 4.4 SDV8 보그SE</span>
-					</div>
-				</a>
-				<a 
-				href='https://file4.bobaedream.co.kr/direct/2021/10/27/CA10471635312559_1_s1.jpg'
-				class="project"
-				target="blank">
-					<img
-					src='../img/아우디 A4 4세대 2.0 TFSI 콰트로 다이나믹 .jpg'
-					class="project__img">
-					<div class="project__discription">
-						<h3>아우디</h3>
-						<span>A4 4세대 2.0 TFSI 콰트로 다이나믹</span>
-					</div>
-				</a>
-				<a
-				href='https://file2.bobaedream.co.kr/pds/CyberCar/6/748286/thum5_748286.jpg'
-				class="project"
-				target="blank">
-					<img
-					src ='../img/벤츠 S450L 4매틱.jpg'
-					class="project__img">
-					<div class="project__discription">
-						<h3>벤츠</h3>
-						<span> S450L 4매틱</span>
-					</div>
-				</a>
-				<a
-				href='https://file2.bobaedream.co.kr/pds/CyberCar/4/747984/thum5_747984.jpg'
-				class='project'
-				target='blank'>
-					<img
-					src='../img/BMW 520d xDrive M 스포츠 플러스.jpg'
-					class="project__img">
-					<div class="project__discription">
-						<h3>BMW</h3>
-						<span> 520d xDrive M 스포츠 플로스</span>
-					</div>
-				</a>
-				<a
-				href='https://file2.bobaedream.co.kr/pds/CyberCar/6/747726/thum5_747726.jpg'
-				class='project'
-				target='blank'>
-					<img
-					src='../img/BMW 520i 럭셔리 라인.jpg'
-					class="project__img">
-					<div class="project__discription">
-						<h3>BMW</h3>
-						<span> 520i 럭셔리 라인</span>
-					</div>
-				</a>
-			</div>
+	<!-- my work -->
+	<section id='mywork'>
+		<h1 class='mywork__title'>My work</h1>
+		<h3 class='mywork__sub'>Projects</h3>
+		<button class='mywork__btn'>All
+			<span class='btn__circle'>8</span>
+		</button>
+		<button class='mywork__btn'>Front-end</button>
+		<button class='mywork__btn'>Back-end</button>
+		<button class='mywork__btn'>else</button>
+		<div class='img__contain'>
+			<img class='mywork__img' src='.\img\폭스바겐 티구안 2.0 TDI 프리미엄.jpg'alt='폭스바겐 티구안'>
+			<img class='mywork__img' src='.\img\포르쉐 파나메라 3.6 4 4WD.jpg'alt='포르쉐 파나메라'>
+			<img class='mywork__img' src='.\img\재규어 XJ8 3.5.jpg'alt='재규어'>
+			<img class='mywork__img' src='.\img\롤스로이스 고스트 V12 6.6.jpg'alt='롤스로이스 고스트'>
+			<img class='mywork__img' src='.\img\마세라티 르반떼 3.0 S 그란스포츠.jpg'alt='마세라티 르반떼 '>
+			<img class='mywork__img' src='.\img\랜드로버 뉴 레인지로버 4.4 SDV8 보그 SE.jpg'alt='랜드로버 뉴 레인지로버 4.4 SDV8 보그 SE'>
+			<img class='mywork__img' src='.\img\BMW 520i 럭셔리 라인.jpg'alt='BMW'>
+			<img class='mywork__img' src='.\img\마이바흐 62 5.5 V12.jpg'alt='마이바흐'>
 		</div>
 	</section>
 	<!-- testimonials -->
-	<section id="testimonials" class="section section__container">
-		<div class='section__container'>
-			<h1>Testimonials</h1>
-			<h3>See what they say about me</h3>
-			<div class="testimonials">
-				<div class="testimonnial">
-					<img 
-					class="testimonial__avarter"
-					src="../img/peopel.png"
-					alt="사람1">
-					<div class="testimonial__speech-bubble">
-					Lorem ipsum dolor sit amet consectetur, adipiscing elit. 
-					Blanditis, porro quia? Molestiae nihil magni lustro?
-					Tenetur minus harum earum dolorum obcascati, sapiente iste
-					qulia magnam? Veritatis quos</div>
-				</div>
-				<div class="testimonnial">
-					<div class="testimonial__speech-bubble">
-					Lorem ipsum dolor sit amet consectetur, adipiscing elit. 
-					Blanditis, porro quia? Molestiae nihil magni lustro?
-					Tenetur minus harum earum dolorum obcascati, sapiente iste
-					qulia magnam? Veritatis quos</div>
-					<img 
-					class="testimonial__avarter"
-					src="../img/people.png"
-					alt="사람2">
-				</div>
-			</div>		
+	<section id='testimonials'>
+		<h1 class='testimonials__title'>Testimonials</h1>
+		<h3 class='testimonials__subtitle'>See what they say about me</h3>
+		<img class='testimonials__img' src='.\img\people.png'>
+		<div class='testimonials__desc'>
+			Lorem ipsum dolor sit amet consecetur, adipisicing elit. Blanditiis, porro quia?
+			Molestiae nihil magni iusto? Tenetur minus harum earum dolorum obcaecati,
+			sapiente iste quia magnam? Veritatis quos aspernatur natus similique.
+			<span class='desc__point'>Leesiho</span>/우주인
 		</div>
+		<div class='testimonials__desc'>
+			Lorem ipsum dolor sit amet consecetur, adipisicing elit. Blanditiis, porro quia?
+			Molestiae nihil magni iusto? Tenetur minus harum earum dolorum obcaecati,
+			sapiente iste quia magnam? Veritatis quos aspernatur natus similique.
+			<span class='desc__point'>Leesiho</span>/탐정
+		</div>
+		<img class='testimonials__img' src='.\img\peopel.png'>
 	</section>
-	<!-- contact -->
-	<section id="contact" class="section section__container">
-		<h1 class="contact__title">Let's talk</h1>
-		<h2 class="contact__email">kingkid123@naver.com</h2>
-		<a class="contact__link" href="https://somcloud.com/apps/note">
-			<i class="fas fa-university"></i>
-		</a>
-		<a class="contact__link" href="https://fontawesome.com/v5.15/icons/home?style=solid">
-			<i class="fas fa-home"></i>
-		</a>
-		<p class="contact__rights">2021 Lee Siho - All rights reserved</p>
+	<section id='contect'>
+		<h1 class='contect_title'>Let's talk</h1>
+		<h3 class='contect_email'>kingkid123@naver.com</h3>
+		<div class='contect_icon'></div>
+		<div class='contect_publish'>2022 Lee Siho - All rights reserved</div>
 	</section>
 </body>
 </html>

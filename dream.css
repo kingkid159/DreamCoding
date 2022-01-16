@@ -6,7 +6,7 @@
 	--fontsize-large:50px;
 	--fontsize-medium:35px;
 	--fontsize-regular:27px;
-	--fontsize-small:20px;
+	--fontsize-small:15px;
 	--fontsize-micro:10px;
 	
 	/*font-weight*/
@@ -105,6 +105,11 @@ button{
 .home__description{
 	margin:0;
 }
+/* about */
+#about{
+	text-align:center;
+	padding:50px;
+}
 .home__contact{
 	padding:5px 15px;
 	font-size:var(--fontsize-small);
@@ -112,4 +117,53 @@ button{
 	border:1px solid var(--color-white);
 	border-radius:4px;
 	margin:30px;
+}
+.major_contain{
+	display:flex;
+	justify-content:space-around;
+	margin-top:50px;
+}
+.major__icon{
+	color:var(--color-navy);
+	font-size:80px;
+	width:140px;
+	height:140px;
+	border:2px solid;
+	border-radius:50%;
+	margin:auto;
+	line-height:140px;
+}
+.major__icon  {
+	transition:300ms ease;
+}
+.major__icon:hover{
+	color:var(--color-green);
+	transform: rotate(-30deg) scale(1.3);
+}
+.img_box{
+	display:flex;
+	flex-direction:column;
+}
+.job_box{
+	display:flex;
+	flex-direction:row;
+}
+.exp__img{
+	width:150px;
+	height:80px;
+}
+.job_description{
+	margin-left:30px;
+	text-align:left;
+	color:var(--color-light-black);
+}
+.job__exp{
+	margin-top:30px;
+}
+.exp__name{
+	font-size:var(--fontsize-small);
+	font-weight:var(--font-bold);
+}
+.exp__content{
+	font-size:var(--fontsize-small);
 }

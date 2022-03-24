@@ -3,21 +3,20 @@
 <head>
 	<meta charset="UTF-8">
 	<title>DreamCoding</title>
-	<link rel='stylesheet'href='./dream.css?ver=1'>
+	<link rel='stylesheet'href='./dream.css?ver=4'>
 	<meta name="description" content="Its siho's web enginering practice site">
 	<meta name="author" content="Lee Siho">
 	<link rel="icon" type="image/png" href="../img/favicon.png">
 	<script src="https://kit.fontawesome.com/d49fa1b12d.js" 
 			crossorigin="anonymous"
 	></script>
-	<script src="dream.js" defer></script>
+	<script src="./dream.js" defer></script>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600&display=swap" rel="stylesheet">
+
 </head>
 <body>
-	<!-- home -->
-	<section id='home'>
 	<!-- navbar -->
 	<nav id='navbar'>
 		<div class='navbar__logo'>
@@ -35,6 +34,10 @@
 			</ul>
 		</div>
 	</nav>
+	<!-- home -->
+	<section id='home'>
+	
+	
 		<img class='home__photo' src='./img/leesiho.jpg'>
 		<h1 class='home__title'>Hello,<br>I'm Lee Siho</h1>
 		<h3 class='home__description'>이건 지금 시험용입니다. 클론코딩 연습용입니다.</h3>
@@ -103,28 +106,66 @@
 		<div class='skills__contain'>
 			<div class='skills__contain__left'>
 				<div class='contain__title'>Skills</div>
-				<div class='left__component'>HTML</div>
-				<div class='left__component'>CSS</div>
-				<div class='left__component'>JAVASCRIPT</div>
-				<div class='left__component'>JAVA</div>
-				<div class='left__component'>DATABASE</div>
-				<div class='left__component'>PYTHON</div>
+				<div class='contain__desc'>
+					<span class='left__component'>HTML</span>
+					<span class=contain__skill_title>90%</span>
+				</div>
+				<div class='skill_bar'>
+					<div class='skill_value'></div>
+				</div>	
+				<div class='contain__desc'>
+					<span class='left__component'>HTML</span>
+					<span class=contain__skill_title>90%</span>
+				</div>	
+				<div class='skill_bar'>
+					<div class='skill_value'></div>
+				</div>	
+				<div class='contain__desc'>
+					<span class='left__component'>HTML</span>
+					<span class=contain__skill_title>90%</span>
+				</div>	
+				<div class='skill_bar'>
+					<div class='skill_value'></div>
+				</div>	
+				<div class='contain__desc'>
+					<span class='left__component'>HTML</span>
+					<span class=contain__skill_title>90%</span>
+				</div>	
+				<div class='skill_bar'>
+					<div class='skill_value'></div>
+				</div>	
+				<div class='contain__desc'>
+					<span class='left__component'>HTML</span>
+					<span class=contain__skill_title>90%</span>
+				</div>	
+				<div class='skill_bar'>
+					<div class='skill_value'></div>
+				</div>	
+				<div class='contain__desc'>
+					<span class='left__component'>HTML</span>
+					<span class=contain__skill_title>90%</span>
+				</div>	
+				<div class='skill_bar'>
+					<div class='skill_value'></div>
+				</div>	
 			</div>
-			<div class='skills__contain__right_top'>
-				<div class='contain__title'>Tools</div>
-				<p class='tools__description'>
-					Android development tools
-					IOS development tools
-					Sublime Text with Plug-ings
-					Visual Studio
-					Team Foundation
-					Adobe Programs
-					Sketch app
-				</p>
-			</div>
-			<div class='skills__contain__right_bot'>
-				<div class='contain__tilte'>Etc</div>
-				<p class='Etc__description'>git</p>
+			<div class='skills__contain__right'>
+				<div class='skills__contain__right_top'>
+					<div class='contain__title'>Tools</div>
+					<p class='tools__description'>
+						Android development tools<br>
+						IOS development tools<br>
+						Sublime Text with Plug-ings<br>
+						Visual Studio<br>
+						Team Foundation<br>
+						Adobe Programs<br>
+						Sketch app
+					</p>
+				</div>
+				<div class='skills__contain__right_bot'>
+					<div class='contain__tilte'>Etc</div>
+					<p class='Etc__description'>git</p>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -132,21 +173,23 @@
 	<section id='mywork'>
 		<h1 class='mywork__title'>My work</h1>
 		<h3 class='mywork__sub'>Projects</h3>
-		<button class='mywork__btn'>All
-			<span class='btn__circle'>8</span>
-		</button>
-		<button class='mywork__btn'>Front-end</button>
-		<button class='mywork__btn'>Back-end</button>
-		<button class='mywork__btn'>else</button>
+		<div class='work__cate'>
+			<button class='mywork__btn'data-filter='*'>All
+				<span class='btn__circle'>8</span>
+			</button>
+			<button class='mywork__btn'data-filter='front-end'>Front-end</button>
+			<button class='mywork__btn'data-filter='back-end'>Back-end</button>
+			<button class='mywork__btn'data-filter='else'>else</button>
+		</div>
 		<div class='img__contain'>
-			<img class='mywork__img' src='.\img\폭스바겐 티구안 2.0 TDI 프리미엄.jpg'alt='폭스바겐 티구안'>
-			<img class='mywork__img' src='.\img\포르쉐 파나메라 3.6 4 4WD.jpg'alt='포르쉐 파나메라'>
-			<img class='mywork__img' src='.\img\재규어 XJ8 3.5.jpg'alt='재규어'>
-			<img class='mywork__img' src='.\img\롤스로이스 고스트 V12 6.6.jpg'alt='롤스로이스 고스트'>
-			<img class='mywork__img' src='.\img\마세라티 르반떼 3.0 S 그란스포츠.jpg'alt='마세라티 르반떼 '>
-			<img class='mywork__img' src='.\img\랜드로버 뉴 레인지로버 4.4 SDV8 보그 SE.jpg'alt='랜드로버 뉴 레인지로버 4.4 SDV8 보그 SE'>
-			<img class='mywork__img' src='.\img\BMW 520i 럭셔리 라인.jpg'alt='BMW'>
-			<img class='mywork__img' src='.\img\마이바흐 62 5.5 V12.jpg'alt='마이바흐'>
+			<img class='mywork__img' src='.\img\폭스바겐 티구안 2.0 TDI 프리미엄.jpg'alt='폭스바겐 티구안'data-type="front-end">
+			<img class='mywork__img' src='.\img\포르쉐 파나메라 3.6 4 4WD.jpg'alt='포르쉐 파나메라'data-type="front-end">
+			<img class='mywork__img' src='.\img\재규어 XJ8 3.5.jpg'alt='재규어'data-type="back-end">
+			<img class='mywork__img' src='.\img\롤스로이스 고스트 V12 6.6.jpg'alt='롤스로이스 고스트'data-type="else">
+			<img class='mywork__img' src='.\img\마세라티 르반떼 3.0 S 그란스포츠.jpg'alt='마세라티 르반떼 'data-type="back-end">
+			<img class='mywork__img' src='.\img\랜드로버 뉴 레인지로버 4.4 SDV8 보그 SE.jpg'alt='랜드로버 뉴 레인지로버 4.4 SDV8 보그 SE'data-type="else">
+			<img class='mywork__img' src='.\img\BMW 520i 럭셔리 라인.jpg'alt='BMW'data-type="front-end">
+			<img class='mywork__img' src='.\img\마이바흐 62 5.5 V12.jpg'alt='마이바흐'data-type="front-end">
 		</div>
 	</section>
 	<!-- testimonials -->
@@ -174,5 +217,46 @@
 		<div class='contect_icon'></div>
 		<div class='contect_publish'>2022 Lee Siho - All rights reserved</div>
 	</section>
+<script>
+/*네비게이션바에  높이 구하기*/
+var navbar = document.querySelector("#navbar");
+var navbarHeight = navbar.getBoundingClientRect().height;
+/* 스크롤을 얼마나 내렸는지 위치를 알려줌  */
+'use strict';
+document.addEventListener('scroll',() =>{
+	console.log(window.scrollY);
+	console.log('navbarHeight:'+navbarHeight);
+	/*스크롤 내린게 navbar높이보다 높으면 navbar--dark라는 클래스를 추가해준다  */
+	if (window.scrollY > navbarHeight){
+		navbar.classList.add('navbar--dark');
+	}else{
+		navbar.classList.remove('navbar--dark');
+	}
+	});
+</script>
+<script>
+var workBTNContainer=document.querySelector('.work__cate');
+var projectImgContainer = document.querySelector('.img__container');
+var projects = document.querySelectorAll('.mywork__img')
+workBTNContainer.addEventListener('click',(e)=>{
+	var filter = e.target.dataset.filter;
+	console.log(filter);
+	projects.forEach((project)=>{
+		if(filter ==='*' || filter === project.dataset.type){
+			project.classList.remove('invisible');
+		}else{
+			project.classList.add('invisible')
+		}
+	});
+	/* forEach와 같은 용법
+		for(let project of projects){
+		
+	};
+	let project;
+	for(let i=0; i < projects.length ; i++){
+		project= project[i];
+	} */
+});
+</script>
 </body>
 </html>

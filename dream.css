@@ -58,19 +58,21 @@ button{
 	background-color:transparent;
 	cursor:pointer;
 }
-
-/*home*/
-#home{
-	background: url('./img/background.png') center/cover no-repeat;
-	text-align:center;
-	color:var(--color-white);
+section{
+	margin:auto;
 }
+
 #navbar{
+	position:fixed;
+	width:100%;
 	color:var(--color-white);
 	display:flex;
 	justify-content:space-between;
-	padding:0 25px;
 	align-items: center;
+	background-color:transparent;
+}
+#navbar.navbar--dark{
+	background-color:var(--color-yellow);
 }
 .navbar__logo{
 	font-size:var(--fontsize-medium);
@@ -93,7 +95,13 @@ button{
 .navbar__menu__item:hover{
 	background-color:var(--color-dark-yellow);
 }
-
+/*home*/
+#home{
+	background: url('./img/background.png') center/cover no-repeat;
+	text-align:center;
+	color:var(--color-white);
+	padding:60px;
+}
 .home__photo{
 	height:300px;
 	width:300px;
@@ -105,11 +113,6 @@ button{
 .home__description{
 	margin:0;
 }
-/* about */
-#about{
-	text-align:center;
-	padding:50px;
-}
 .home__contact{
 	padding:5px 15px;
 	font-size:var(--fontsize-small);
@@ -118,6 +121,12 @@ button{
 	border-radius:4px;
 	margin:30px;
 }
+/* about */
+#about{
+	text-align:center;
+	padding:50px;
+}
+
 .major_contain{
 	display:flex;
 	justify-content:space-around;
@@ -166,4 +175,74 @@ button{
 }
 .exp__content{
 	font-size:var(--fontsize-small);
+}
+
+/*skill*/
+#skills{
+	background-color:var(--color-yellow);
+	text-align:center;
+}
+.skills__contain{
+	display:flex;
+	justify-content:center;
+}
+.skills__contain__left{
+	flex-basis:60%;
+	background-color:var(--color-dark-white);
+	padding:30px 0 ;
+}
+.contain__desc{
+	display:flex;
+	justify-content:space-between;
+	padding:20px 40px;
+}
+.skills__contain__right{
+	display:flex;
+	flex-direction:column;
+	flex-basis:40%;
+	height:100%;
+}
+.skills__contain__right_top{
+	background-color:var(--color-lightdark-white);
+}
+.skills__contain__right_bot{
+	background-color:var(--color-white);
+}
+.skill_bar{
+	background-color:var(--color-black);
+	height:4px;
+	width:80%;
+	margin:auto;
+}
+.skill_value{
+	background-color:var(--color-white);
+	height:4px;
+	width:90%;
+}
+
+/* work*/
+.work__cate{
+	margin:40px;
+}
+.mywork__btn{
+	border:1px solid var(--color-black);
+	padding:8px 48px;
+	border-radius:4px;
+}
+.mywork__btn:hover{
+	background-color:var(--color-yellow);
+}
+.img__contain{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+	width:80%;
+	height:250px;
+}
+.mywork__img{
+	width:20%;
+	height:60%;
+}
+.mywork__img.invisible{
+	display:none;
 }

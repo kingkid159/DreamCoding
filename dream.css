@@ -61,7 +61,10 @@ button{
 section{
 	margin:auto;
 }
-
+.point{
+	background-color:var(--color-green);
+	font-weight:var(--font-bold);
+}
 #navbar{
 	position:fixed;
 	width:100%;
@@ -186,6 +189,12 @@ section{
 	display:flex;
 	justify-content:center;
 }
+.skills__title{
+	margin-bottom:0px;
+}
+.skills__subtitle{
+	margin-top:0px;
+}
 .skills__contain__left{
 	flex-basis:60%;
 	background-color:var(--color-dark-white);
@@ -209,40 +218,84 @@ section{
 	background-color:var(--color-white);
 }
 .skill_bar{
-	background-color:var(--color-black);
+	background-color:var(--color-light-black);
 	height:4px;
 	width:80%;
 	margin:auto;
 }
-.skill_value{
-	background-color:var(--color-white);
+.html_skill_value{
+	background-color:var(--color-yellow);
 	height:4px;
 	width:90%;
 }
-
+.css_skill_value{
+	background-color:var(--color-yellow);
+	height:4px;
+	width:85%;
+}
+.java_skill_value{
+	background-color:var(--color-yellow);
+	height:4px;
+	width:80%;
+}
+.python_skill_value{
+	background-color:var(--color-yellow);
+	height:4px;
+	width:80%;
+}
+.oracle_skill_value{
+	background-color:var(--color-yellow);
+	height:4px;
+	width:80%;
+}
+.communication_skill_value{
+	background-color:var(--color-yellow);
+	height:4px;
+	width:95%;
+}
 /* work*/
 .work__cate{
-	margin:40px;
+	text-align:center;
 }
 .mywork__btn{
 	border:1px solid var(--color-black);
-	padding:8px 48px;
+	padding:8px 0;
+	width:500px;
 	border-radius:4px;
 }
 .mywork__btn:hover{
 	background-color:var(--color-yellow);
 }
-.img__contain{
-	display:flex;
-	flex-wrap:wrap;
-	justify-content:center;
-	width:80%;
-	height:250px;
+.mywork__btn.active{
+	background-color:var(--color-yellow);
 }
-.mywork__img{
-	width:20%;
-	height:60%;
+.mywork__content{
+	text-align:center;
+	margin-top:50px;
+	
 }
-.mywork__img.invisible{
+.mywork__content.invisible{
 	display:none;
+}
+
+.mywork__img{
+	width:30%;
+}
+
+/*contact*/
+#contact{
+	background: url('./img/background.png') center/cover no-repeat;	
+	text-align:center;
+	padding:90px 0 110px 0;
+}
+.contact_github{
+	font-size: var(--fontsize-regular);
+    font-weight: var(--font-regular);
+}
+.contact_publish{
+	margin:41.5px;
+}
+.contact_phone{
+	font-size: var(--fontsize-regular);
+    font-weight: var(--font-regular);
 }

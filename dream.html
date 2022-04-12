@@ -3,18 +3,16 @@
 <head>
 	<meta charset="UTF-8">
 	<title>DreamCoding</title>
-	<link rel='stylesheet'href='./dream.css?ver=4'>
+	<link rel='stylesheet'href='./dream.css?ver=2'>
 	<meta name="description" content="Its siho's web enginering practice site">
 	<meta name="author" content="Lee Siho">
 	<link rel="icon" type="image/png" href="../img/favicon.png">
-	<script src="https://kit.fontawesome.com/d49fa1b12d.js" 
-			crossorigin="anonymous"
-	></script>
+	<script src="https://kit.fontawesome.com/65fa7e38cc.js" crossorigin="anonymous"></script>
 	<script src="./dream.js" defer></script>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600&display=swap" rel="stylesheet">
-
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
 	<!-- navbar -->
@@ -25,12 +23,11 @@
 		</div>
 		<div>
 			<ul class='navbar__menu'>
-				<li class='navbar__menu__item active'>Home</li>
-				<li class='navbar__menu__item'>About</li>
-				<li class='navbar__menu__item'>Skills</li>
-				<li class='navbar__menu__item'>My work</li>
-				<li class='navbar__menu__item'>Testimonial</li>
-				<li class='navbar__menu__item'>Contact</li>
+				<li class='navbar__menu__item active' data-link='#home'>Home</li>
+				<li class='navbar__menu__item' data-link='#about'>About</li>
+				<li class='navbar__menu__item' data-link='#skills'>Skills</li>
+				<li class='navbar__menu__item' data-link='#mywork'>My work</li>
+				<li class='navbar__menu__item' data-link='#contact'>Contact</li>
 			</ul>
 		</div>
 	</nav>
@@ -40,18 +37,33 @@
 	
 		<img class='home__photo' src='./img/leesiho.jpg'>
 		<h1 class='home__title'>Hello,<br>I'm Lee Siho</h1>
-		<h3 class='home__description'>이건 지금 시험용입니다. 클론코딩 연습용입니다.</h3>
+		<h3 class='home__description'>안녕하세요 이시호입니다.</h3>
 		<button class="home__contact">Contact me</button>
 	</section>
 	<!-- about -->
 	<section id='about'>
 		<h1 class='about__title'>About me</h1>
 		<h3 class="about__description">
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-		 Ut pretium pretium tempor. Ut eget imperdiet neque. 
-		 In volutpat ante semper diam molestie, et aliquam erat laoreet. 
-		 Sed sit amet arcu aliquet, molesie justo at, auctor nunc. Phasellus ligula ipsum, volutpata eget semper id,
-		  viverra eget nibh. Suspendisse luctus mattis cur </h3>
+			<span class='point'>큐브</span>
+			를 좋아합니다.<br>
+			큐브는 한면을 다 맞춰도 전체면을 맞추기 위해선
+			<span class='point'>이미 맞춰진 면을 망가뜨릴 줄</span>
+			알아야합니다.<br>
+			코딩도 한 부분을 수정하기 위해선 잘 구동되던 부분을 건드려야 할 때가 자주 생기는데
+			<br>그 때 생기는 
+			<span class='point'>불안감을 즐깁니다.</span><br>
+			또한 그런 불안감 끝에 완성되는 코드를 보며 
+			<span class='point'>성취감을 느낍니다.</span>
+			 
+			<!-- <span class='point'>파이썬을 활용한 빅데이터 전문가</span> 
+			과정을 수료했으며 <br>
+			이 과정에서 
+			<span class='point'>파이썬을 활용한 데이터 수집부터 시각화</span>
+			까지의 모든 단계를 학습했습니다. <br>
+			또한 웹사이트 제작 프로젝트를 통해 
+			<span class='point'>DBMS부터 View</span>
+			까지의 모든 과정을 학습했습니다. -->
+		</h3>
 		<div class='major_contain'>
 			<div class="major">
 				<div class="major__icon"><i class="fab fa-html5"></i></div>
@@ -65,28 +77,28 @@
 				<div class="major__icon"><i class="fab fa-python"></i></div>
 				<h2 class='major__title'>Python</h2>
 				<div class='major__description'>
-					Web API, Pandas, Request
+					Web API, Pandas, Matplotlib
 					<br>Beautiful Soup,...
 				</div>
 			</div>
 			<div class="major">
-				<div class="major__icon"><i class="fas fa-comments"></i></div>
-				<h2 class='major__title'>Comunication</h2>
+				<div class="major__icon"><i class="fa-brands fa-java"></i></div>
+				<h2 class='major__title'>Java</h2>
 				<div class='major__description'>
-					lgU+, startup-cometition
-					<br>startup-camp,...
+					Java,Spring-Framework,JSP
+					<br>else,...
 				</div>
 			</div>
 		</div>
 		<div class="job__exp">
 			<div class='job_box'>
 				<div class='img_box'>
-					<img class='exp__img' src='./img/LG_U+_logo.png'alt='lgu+'>
+					<img class='exp__img' src='.\img\portpolreal\경영기술.png'alt='lgu+'>
 					<img class='exp__img' src='./img/jakorea.png'alt='jakorea'>
 				</div>
 				<div class='job_description'>	
-					<p class='exp__name'>LGU+</p>
-					<p class='exp__content'>영업, 재고관리, 대내외 민원처리</p>
+					<p class='exp__name'>경영기술개발원</p>
+					<p class='exp__content'>Java,Python,Oracle,Html,CSS</p>
 					<p class='exp__name'>JA Korea</p>
 					<p class='exp__content'>Aim-High camp,Fedex startup-competition</p>
 				</div>
@@ -95,13 +107,19 @@
 	</section>
 	<!-- skills -->
 	<section id='skills'>
+		<br>
 		<h1 class='skills__title'>Skills</h1>
 		<h2 class='skills__subtitle'>Skills & Attributes</h2>
 		<h4 class='skills__desc'>
-		Experience with all phases of the software life-cycle.
-		Passion for learning new technologies. Capable of
-		Working within a team environment and independently. Ability to plan
-		and time schedule, work under strict time pressure and adapt quickly when needed.
+			새로운 것을 배우는 것에 
+			<span class='point'>열정</span>
+			을 가지고 있습니다. 
+			<span class='point'>DBMS부터 View</span>
+			까지의 전 과정을 프로젝트를 진행하며 학습했습니다.<br>
+			또한 LGU+에서 고객응대 및 영업과, JAKorea에서 진행하는 각종 대회 및 행사에 참여하며<br>
+			자원관리 및 팀원들과의 
+			<span class='point'>의사소통</span>
+			에 강점이 있습니다.
 		</h4>
 		<div class='skills__contain'>
 			<div class='skills__contain__left'>
@@ -111,55 +129,53 @@
 					<span class=contain__skill_title>90%</span>
 				</div>
 				<div class='skill_bar'>
-					<div class='skill_value'></div>
+					<div class='html_skill_value'></div>
 				</div>	
 				<div class='contain__desc'>
-					<span class='left__component'>HTML</span>
-					<span class=contain__skill_title>90%</span>
+					<span class='left__component'>CSS</span>
+					<span class=contain__skill_title>85%</span>
 				</div>	
 				<div class='skill_bar'>
-					<div class='skill_value'></div>
+					<div class='css_skill_value'></div>
 				</div>	
 				<div class='contain__desc'>
-					<span class='left__component'>HTML</span>
-					<span class=contain__skill_title>90%</span>
+					<span class='left__component'>Java</span>
+					<span class=contain__skill_title>80%</span>
 				</div>	
 				<div class='skill_bar'>
-					<div class='skill_value'></div>
+					<div class='java_skill_value'></div>
 				</div>	
 				<div class='contain__desc'>
-					<span class='left__component'>HTML</span>
-					<span class=contain__skill_title>90%</span>
+					<span class='left__component'>Python</span>
+					<span class=contain__skill_title>80%</span>
 				</div>	
 				<div class='skill_bar'>
-					<div class='skill_value'></div>
+					<div class='python_skill_value'></div>
 				</div>	
 				<div class='contain__desc'>
-					<span class='left__component'>HTML</span>
-					<span class=contain__skill_title>90%</span>
+					<span class='left__component'>Oracle</span>
+					<span class=contain__skill_title>80%</span>
 				</div>	
 				<div class='skill_bar'>
-					<div class='skill_value'></div>
+					<div class='oracle_skill_value'></div>
 				</div>	
 				<div class='contain__desc'>
-					<span class='left__component'>HTML</span>
-					<span class=contain__skill_title>90%</span>
+					<span class='left__component'>Communication</span>
+					<span class=contain__skill_title>95%</span>
 				</div>	
 				<div class='skill_bar'>
-					<div class='skill_value'></div>
+					<div class='communication_skill_value'></div>
 				</div>	
 			</div>
 			<div class='skills__contain__right'>
 				<div class='skills__contain__right_top'>
 					<div class='contain__title'>Tools</div>
 					<p class='tools__description'>
-						Android development tools<br>
-						IOS development tools<br>
-						Sublime Text with Plug-ings<br>
-						Visual Studio<br>
-						Team Foundation<br>
-						Adobe Programs<br>
-						Sketch app
+						eclipse<br>
+						Spring Tool Suite<br>
+						PyCharm<br>
+						sqldeveloper<br>
+						workbench
 					</p>
 				</div>
 				<div class='skills__contain__right_bot'>
@@ -174,48 +190,122 @@
 		<h1 class='mywork__title'>My work</h1>
 		<h3 class='mywork__sub'>Projects</h3>
 		<div class='work__cate'>
-			<button class='mywork__btn'data-filter='*'>All
-				<span class='btn__circle'>8</span>
-			</button>
-			<button class='mywork__btn'data-filter='front-end'>Front-end</button>
-			<button class='mywork__btn'data-filter='back-end'>Back-end</button>
-			<button class='mywork__btn'data-filter='else'>else</button>
+			<button class='mywork__btn active'data-filter='welcome'>프로젝트 1. Welcome</button>
+			<button class='mywork__btn'data-filter='GoIn'>프로젝트 2. GoIn</button>
 		</div>
-		<div class='img__contain'>
-			<img class='mywork__img' src='.\img\폭스바겐 티구안 2.0 TDI 프리미엄.jpg'alt='폭스바겐 티구안'data-type="front-end">
-			<img class='mywork__img' src='.\img\포르쉐 파나메라 3.6 4 4WD.jpg'alt='포르쉐 파나메라'data-type="front-end">
-			<img class='mywork__img' src='.\img\재규어 XJ8 3.5.jpg'alt='재규어'data-type="back-end">
-			<img class='mywork__img' src='.\img\롤스로이스 고스트 V12 6.6.jpg'alt='롤스로이스 고스트'data-type="else">
-			<img class='mywork__img' src='.\img\마세라티 르반떼 3.0 S 그란스포츠.jpg'alt='마세라티 르반떼 'data-type="back-end">
-			<img class='mywork__img' src='.\img\랜드로버 뉴 레인지로버 4.4 SDV8 보그 SE.jpg'alt='랜드로버 뉴 레인지로버 4.4 SDV8 보그 SE'data-type="else">
-			<img class='mywork__img' src='.\img\BMW 520i 럭셔리 라인.jpg'alt='BMW'data-type="front-end">
-			<img class='mywork__img' src='.\img\마이바흐 62 5.5 V12.jpg'alt='마이바흐'data-type="front-end">
+		<div class='work__contain'>
+			<div class='mywork__content' data-type="welcome">
+				<h2>Welcome 컴퓨터 쇼핑몰 제작 프로젝트</h2>
+				<div class='mywork_desc'>
+					사용 언어 : Html, CSS, Javascript, Java, JSP, Python, Oracle<br>
+					사용 툴 : eclipse, PyCharm, sqldeveloper<br>
+					컴퓨터 쇼핑몰에서 beautifulSoup라이브러리를 활용하여 컴퓨터 데이터 수집<br>
+					수집한 데이터 토대로 컴퓨터 쇼핑몰을 제작해보는 프로젝트
+				</div>
+			</div>
+			<div class='mywork__content' data-type="welcome">
+				<img class='mywork__img' src='.\img\portpolreal\erdwelcome.png'alt='erdwelcome'>
+				<h4>데이터베이스 설계</h4>
+				<div class='mywork_desc'>
+					
+				</div>
+			</div>
+			<div class='mywork__content' data-type="welcome">
+				<img class='mywork__img' src='.\img\portpolreal\main.png'alt='computerMain'>
+				<h4>메인화면</h4>
+				<div class='mywork_desc'>
+					이미지 슬라이드를 활용하여 각각의 카테고리를 시각적으로  표현
+				</div>
+			</div>
+			<div class='mywork__content' data-type="welcome">
+				<img class='mywork__img' src='.\img\portpolreal\list.png'alt='productList'>
+				<img class='mywork__img' src='.\img\portpolreal\welcomedetail.png'alt='productDetail'>
+				<h4>상품리스트와 상세정보 화면</h4>
+				<div class='mywork_desc'>
+					상품이 카테고리에 맞게 노출되게하고 클릭시 해당 상품 상세정보 보기로 이동
+				</div>
+			</div>
+			<div class='mywork__content' data-type="welcome">
+				<img class='mywork__img' src='.\img\portpolreal\qnareview.png'alt='qnaReview'>
+				<h4>상품 리뷰와 상품 문의사항 화면</h4>
+				<div class='mywork_desc'>
+					각 상품에 맞는 리뷰와 문의사항 노출, 일반 회원은 입력과 자신이 입력한 정보 수정삭제 가능
+					관리자는  이용자의 글을 구분 없이 삭제 가능, 문의사항에 답변가능
+				</div>
+			</div>
+			<div class='mywork__content invisible' data-type="GoIn">
+				<h2>GoIn 채용정보 제공 사이트 제작 프로젝트</h2>
+				<div class='mywork_desc'>
+					사용 언어 : Html, CSS, Javascript, Java, JSP, Python, Oracle<br>
+					사용 툴 : SpringToolSuite, PyCharm, sqldeveloper<br>
+					파이썬을 활용하여 취업사이트의 각종 정보 수집과 정제 및 시각화를 통한 채용정보를 제공하고<br>
+					자기소개서 작성과 이력서를 다운로드 받을 수 있는 사이트를 JavaSpringFramework을 활용하여 제작하는 프로젝트
+				</div>
+			</div>
+			<div class='mywork__content invisible' data-type="GoIn">
+				<img class='mywork__img' src='.\img\portpolreal\erd.png'alt='erd'>
+				<h4>데이터베이스 설계</h4>
+				<div class='mywork_desc'>
+					데이터베이스 간소화를 위해
+					회원이 아니여도 이용가능한 서비스들은 별도 테이블과 연계없이 독립적으로 설계
+				</div>
+			</div>
+			<div class='mywork__content invisible' data-type="GoIn">
+				<img class='mywork__img' src='.\img\portpolreal\chartimg1.png'alt='chartimg1'>
+				<img class='mywork__img' src='.\img\portpolreal\chartImg2.png'alt='chartImg2'>
+				<img class='mywork__img' src='.\img\portpolreal\chartimg4.png'alt='chartimg4'>
+				<h4>채용통계 화면</h4>
+				<div class='mywork_desc'>
+					수집, 정제, 통계를 끝낸 자료들을 시각화 하여 각각의 목록에 맞게 노출되도록 구현
+				</div>
+			</div>
+			<div class='mywork__content invisible' data-type="GoIn">
+				<img class='mywork__img' src='.\img\portpolreal\craw.png'alt='craw'>
+				<img class='mywork__img' src='.\img\portpolreal\carwcsv.png'alt='carwcsv'>
+				<h4>채용통계를 위한 수집 코드와 수집된 데이터</h4>
+				<div class='mywork_desc'>
+					파이썬 beautifulSoup 라이브러리를 활용한 웹사이트 크롤링 및 수집데이터 csv파일로 저장
+				</div>
+			</div>
+			<div class='mywork__content invisible' data-type="GoIn">
+				<img class='mywork__img' src='.\img\portpolreal\visual.png'alt='visual'>
+				<img class='mywork__img' src='.\img\portpolreal\visualimg.png'alt='visualimg'>
+				<h4>수집된 데이터 정제작업 및 시각화 작업과 결과물 </h4>
+				<div class='mywork_desc'>
+					Pandas 라이브러리를 활용하여 데이터프레임 제작 후 데이터 정제작업, matplotlib를 활용한 데이터 시각화작업
+				</div>
+			</div>
+			<div class='mywork__content invisible' data-type="GoIn">
+				<img class='mywork__img' src='.\img\portpolreal\edulistimg1.png'alt='edulistimg1'>
+				<img class='mywork__img' src='.\img\portpolreal\edulistimg3.png'alt='edulistimg3'>
+				<img class='mywork__img' src='.\img\portpolreal\edulistimg4.png'alt='edulistimg4'>
+				<h4>취업지원페이지 리스트와, 상세보기, 수정기능 화면</h4>
+				<div class='mywork_desc'>
+					국비교육정보를 데이터베이스에 저장하고 리스트와 상세보기로 화면구현,<br> 
+					회원등급이 기업이면서 자신의 게시물인 경우 및 관리자에게는 수정 및 삭제 버튼 노출
+				</div>
+			</div>
+			<div class='mywork__content invisible' data-type="GoIn">
+				<img class='mywork__img' src='.\img\portpolreal\edulistimg2.png'alt='edulistimg2'>
+				<img class='mywork__img' src='.\img\portpolreal\educraw.png'alt='educraw'>
+				<h4>취업지원 공고 입력화면과 취업지원 공고 수집 코드</h4>
+				<div class='mywork_desc'>
+					회원등급이 기업이거나 관리자일경우 취업지원 공고를 직접 올릴 수 있으며,<br> 
+					파이썬 BeautifulSoup 라이브러리를 활용한 웹사이트 수집데이터를 데이터베이스에 저장하고 노출도 가능하다
+				</div>
+			</div>
 		</div>
+		<br><br><br>
 	</section>
-	<!-- testimonials -->
-	<section id='testimonials'>
-		<h1 class='testimonials__title'>Testimonials</h1>
-		<h3 class='testimonials__subtitle'>See what they say about me</h3>
-		<img class='testimonials__img' src='.\img\people.png'>
-		<div class='testimonials__desc'>
-			Lorem ipsum dolor sit amet consecetur, adipisicing elit. Blanditiis, porro quia?
-			Molestiae nihil magni iusto? Tenetur minus harum earum dolorum obcaecati,
-			sapiente iste quia magnam? Veritatis quos aspernatur natus similique.
-			<span class='desc__point'>Leesiho</span>/우주인
-		</div>
-		<div class='testimonials__desc'>
-			Lorem ipsum dolor sit amet consecetur, adipisicing elit. Blanditiis, porro quia?
-			Molestiae nihil magni iusto? Tenetur minus harum earum dolorum obcaecati,
-			sapiente iste quia magnam? Veritatis quos aspernatur natus similique.
-			<span class='desc__point'>Leesiho</span>/탐정
-		</div>
-		<img class='testimonials__img' src='.\img\peopel.png'>
-	</section>
-	<section id='contect'>
-		<h1 class='contect_title'>Let's talk</h1>
-		<h3 class='contect_email'>kingkid123@naver.com</h3>
-		<div class='contect_icon'></div>
-		<div class='contect_publish'>2022 Lee Siho - All rights reserved</div>
+	<section id='contact'>
+		<h1 class='contact_title'>Let's talk</h1>
+		<h3 class='contact_email'>Email : kingkid123@naver.com</h3>
+		<div class='contact_phone'>PhoneNumber : 010-2436-5285</div>
+		<a class='contact_github' href='https://github.com/kingkid159' target='blank'>
+		<br>
+			<i class="fa-brands fa-github"></i> Go to GitHub!!!
+		</a>
+		<div class='contact_publish'>2022 Lee Siho - All rights reserved</div>
 	</section>
 <script>
 /*네비게이션바에  높이 구하기*/
@@ -235,9 +325,16 @@ document.addEventListener('scroll',() =>{
 	});
 </script>
 <script>
+$('button').click(function(){
+	  $('button').removeClass("active");
+	  $(this).addClass("active");
+	});
+</script>
+<script>
+/*버튼으로 노출되는 컨텐트 바꾸기*/
 var workBTNContainer=document.querySelector('.work__cate');
-var projectImgContainer = document.querySelector('.img__container');
-var projects = document.querySelectorAll('.mywork__img')
+var projectImgContainer = document.querySelector('.work__contain');
+var projects = document.querySelectorAll('.mywork__content')
 workBTNContainer.addEventListener('click',(e)=>{
 	var filter = e.target.dataset.filter;
 	console.log(filter);
@@ -257,6 +354,25 @@ workBTNContainer.addEventListener('click',(e)=>{
 		project= project[i];
 	} */
 });
+</script>
+<script>
+	/*버튼 클릭 시 해당하는 섹션으로 스크롤링*/
+	var navBtn = document.querySelector('.navbar__menu');
+	navBtn.addEventListener('click', (event) =>{
+		var target = event.target;
+		var link = target.dataset.link
+		if(link == null){
+			return;
+		}else{
+			var scrollTo = document.querySelector(link);
+			scrollTo.scrollIntoView({behavior:'smooth'});
+		}
+	})
+	var homeContactBtn = document.querySelector('.home__contact');
+	homeContactBtn.addEventListener('click', () =>{
+		var scrollTo = document.querySelector('#contact');
+		scrollTo.scrollIntoView({behavior:'smooth'});
+	})
 </script>
 </body>
 </html>

@@ -188,6 +188,8 @@ section{
 .skills__contain{
 	display:flex;
 	justify-content:center;
+	margin:20px 80px;
+	background-color:var(--color-white);
 }
 .skills__title{
 	margin-bottom:0px;
@@ -206,16 +208,27 @@ section{
 	padding:20px 40px;
 }
 .skills__contain__right{
-	display:flex;
-	flex-direction:column;
 	flex-basis:40%;
 	height:100%;
+	
 }
 .skills__contain__right_top{
 	background-color:var(--color-lightdark-white);
+	text-align:center;
+	padding:20px 0;
 }
 .skills__contain__right_bot{
-	background-color:var(--color-white);
+	padding:20px 0;
+}
+.contain__title{
+	font-weight:var(--font-bold);
+	font-size:var(--fontsize-regular);
+}
+.tools__description{
+	padding:0;
+}
+.tools__description_li{
+	margin:20px 0;
 }
 .skill_bar{
 	background-color:var(--color-light-black);
@@ -223,10 +236,10 @@ section{
 	width:80%;
 	margin:auto;
 }
-.html_skill_value{
+.vue_skill_value{
 	background-color:var(--color-yellow);
 	height:4px;
-	width:90%;
+	width:80%;
 }
 .css_skill_value{
 	background-color:var(--color-yellow);
@@ -236,17 +249,17 @@ section{
 .java_skill_value{
 	background-color:var(--color-yellow);
 	height:4px;
-	width:80%;
+	width:85%;
 }
 .python_skill_value{
 	background-color:var(--color-yellow);
 	height:4px;
-	width:80%;
+	width:85%;
 }
 .oracle_skill_value{
 	background-color:var(--color-yellow);
 	height:4px;
-	width:80%;
+	width:85%;
 }
 .communication_skill_value{
 	background-color:var(--color-yellow);
@@ -256,13 +269,25 @@ section{
 /* work*/
 .work__cate{
 	text-align:center;
+	display: flex;
+	align-items: flex-start; /* 또는 center */
+	justify-content: center; /* 모든 버튼을 가운데 정렬 */
 }
 .mywork__btn{
 	border:1px solid var(--color-black);
 	padding:8px 0;
-	width:500px;
+	width:250px;
 	border-radius:4px;
+	box-sizing: border-box;
+	height:33px;
+	margin-right: 10px;
 }
+
+/* 마지막 버튼의 오른쪽 마진 제거 */
+.mywork__btn:last-child {
+	margin-right: 0;
+}
+
 .mywork__btn:hover{
 	background-color:var(--color-yellow);
 }
@@ -277,7 +302,10 @@ section{
 .mywork__content.invisible{
 	display:none;
 }
-
+.mywork_desc{
+	display:flex;
+	justify-content:center;
+}
 .mywork__img{
 	width:30%;
 }
